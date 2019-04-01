@@ -1,3 +1,26 @@
 .app {
-  
+  /*border: 1px solid yellowgreen;*/
+  max-width: 600px;
+  margin: 10vw auto 0;
+  padding: 5vw;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 24px;
 }
+
+@media screen and (max-width: 600px) {
+  .app {
+    font-size: 16px;
+  }
+}
+
+.app__input {
+  margin: 0 10px;
+  font-size: 56px;
+}
+
+.app__display-number {
+  font-size: 1.5em;
+}
+
+

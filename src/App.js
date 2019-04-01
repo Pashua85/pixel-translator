@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AutosizeInput from 'react-input-autosize';
 
 import './App.css';
 
@@ -58,13 +59,16 @@ class App extends Component {
       <div className="app">
         <div className="app__mock-up-block">
           Number
-          <input 
+          <AutosizeInput 
+            className="app__input"
             type="text" 
             value={mockUpNumber} 
             onChange={this.onMockUpNumberChange}
+            autoFocus={true}
           />
           from the
-          <input 
+          <AutosizeInput 
+            className="app__input"
             type="text" 
             value={mockUpSize}
             onChange={this.onMockUpSizeChange}
@@ -75,7 +79,8 @@ class App extends Component {
         <div className="app__display-block">
           <div className="app__display-number">{displayNumber}</div>
           on the 
-          <input 
+          <AutosizeInput 
+            className="app__input"
             type="text" 
             value={displaySize}
             onChange={this.onDisplaySizeChange}
